@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Login_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Login Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Login_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\atolo\Downloads\selenium-framework\testng-login.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Login_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Login_Test_Suite" class="navigator-link ">
+                    <span>7 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Login_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Login_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Login_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Login_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Login_Test_Suite" class="hide-methods failed suite-Login_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Login_Test_Suite -->
+                      <a href="#" panel-name="suite-Login_Test_Suite" class="show-methods failed suite-Login_Test_Suite"> (show)</a> <!-- show-methods failed suite-Login_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Login_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyLoginPageLoadsSuccessfully">verifyLoginPageLoadsSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyLoginWithInvalidPassword(LOGIN_008, Admin, Wrong123, Invalid credentials)">verifyLoginWithInvalidPassword(LOGIN_008, Admin, Wrong123, Invalid credentials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Login_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Login_Test_Suite" class="hide-methods passed suite-Login_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Login_Test_Suite -->
+                      <a href="#" panel-name="suite-Login_Test_Suite" class="show-methods passed suite-Login_Test_Suite"> (show)</a> <!-- show-methods passed suite-Login_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Login_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyBlankPasswordValidation">verifyBlankPasswordValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyBlankUsernameValidation">verifyBlankUsernameValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyBothFieldsBlankValidation">verifyBothFieldsBlankValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyForgotPasswordLink">verifyForgotPasswordLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyLoginButtonVisibility">verifyLoginButtonVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyLoginPageUrl">verifyLoginPageUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUsername(LOGIN_007, Admin123, admin123, Invalid credentials)">verifyLoginWithInvalidUsername(LOGIN_007, Admin123, admin123, Invalid credentials)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyPasswordFieldVisibility">verifyPasswordFieldVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyUsernameFieldVisibility">verifyUsernameFieldVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login_Test_Suite" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="verifyValidLogin(LOGIN_006, Admin, admin123, Redirected to Dashboard)">verifyValidLogin(LOGIN_006, Admin, admin123, Redirected to Dashboard)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Login_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Login_Test_Suite" class="panel Login_Test_Suite">
+          <div class="suite-Login_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageLoadsSuccessfully">
+                  </a> <!-- verifyLoginPageLoadsSuccessfully -->
+                  <span class="method-name">verifyLoginPageLoadsSuccessfully</span>
+                  <div class="stack-trace">java.lang.AssertionError: LOGIN_001 FAILED: Login page did not load. Logo not visible. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.qa.tests.LoginTests.verifyLoginPageLoadsSuccessfully(LoginTests.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(LOGIN_001 | Verify login page loads successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidPassword(LOGIN_008, Admin, Wrong123, Invalid credentials)">
+                  </a> <!-- verifyLoginWithInvalidPassword(LOGIN_008, Admin, Wrong123, Invalid credentials) -->
+                  <span class="method-name">verifyLoginWithInvalidPassword</span>
+                  <span class="parameters">(LOGIN_008,Admin,Wrong123,Invalid credentials)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [LOGIN_008 FAILED: Invalid password validation failed.] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:644)
+	at com.qa.tests.LoginTests.verifyLoginWithInvalidPassword(LoginTests.java:179)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(LOGIN_008 | Verify error shown for invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login_Test_Suite-class-failed -->
+          <div class="suite-Login_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBlankPasswordValidation">
+                  </a> <!-- verifyBlankPasswordValidation -->
+                  <span class="method-name">verifyBlankPasswordValidation</span>
+                  <em>
+(LOGIN_010 | Verify required validation when password is blank)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBlankUsernameValidation">
+                  </a> <!-- verifyBlankUsernameValidation -->
+                  <span class="method-name">verifyBlankUsernameValidation</span>
+                  <em>
+(LOGIN_009 | Verify required validation when username is blank)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBothFieldsBlankValidation">
+                  </a> <!-- verifyBothFieldsBlankValidation -->
+                  <span class="method-name">verifyBothFieldsBlankValidation</span>
+                  <em>
+(LOGIN_011 | Verify validation messages when both fields are blank)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForgotPasswordLink">
+                  </a> <!-- verifyForgotPasswordLink -->
+                  <span class="method-name">verifyForgotPasswordLink</span>
+                  <em>
+(LOGIN_012 | Verify Forgot Password link navigates to reset page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginButtonVisibility">
+                  </a> <!-- verifyLoginButtonVisibility -->
+                  <span class="method-name">verifyLoginButtonVisibility</span>
+                  <em>
+(LOGIN_005 | Verify login button is visible and clickable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageUrl">
+                  </a> <!-- verifyLoginPageUrl -->
+                  <span class="method-name">verifyLoginPageUrl</span>
+                  <em>
+(LOGIN_002 | Verify login page URL matches expected URL)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidUsername(LOGIN_007, Admin123, admin123, Invalid credentials)">
+                  </a> <!-- verifyLoginWithInvalidUsername(LOGIN_007, Admin123, admin123, Invalid credentials) -->
+                  <span class="method-name">verifyLoginWithInvalidUsername</span>
+                  <span class="parameters">(LOGIN_007,Admin123,admin123,Invalid credentials)</span>
+                  <em>
+(LOGIN_007 | Verify error shown for invalid username)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPasswordFieldVisibility">
+                  </a> <!-- verifyPasswordFieldVisibility -->
+                  <span class="method-name">verifyPasswordFieldVisibility</span>
+                  <em>
+(LOGIN_004 | Verify password field is visible and enabled)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUsernameFieldVisibility">
+                  </a> <!-- verifyUsernameFieldVisibility -->
+                  <span class="method-name">verifyUsernameFieldVisibility</span>
+                  <em>
+(LOGIN_003 | Verify username field is visible and enabled)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidLogin(LOGIN_006, Admin, admin123, Redirected to Dashboard)">
+                  </a> <!-- verifyValidLogin(LOGIN_006, Admin, admin123, Redirected to Dashboard) -->
+                  <span class="method-name">verifyValidLogin</span>
+                  <span class="parameters">(LOGIN_006,Admin,admin123,Redirected to Dashboard)</span>
+                  <em>
+(LOGIN_006 | Verify valid login redirects to dashboard)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login_Test_Suite-class-passed -->
+        </div> <!-- panel Login_Test_Suite -->
+        <div panel-name="test-xml-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\atolo\Downloads\selenium-framework\testng-login.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Login Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Module&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.LoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Module --&gt;
+&lt;/suite&gt; &lt;!-- Login Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Login Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Module (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Login Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">functional</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyForgotPasswordLink</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginPageLoadsSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyBlankPasswordValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyBlankUsernameValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyBothFieldsBlankValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyForgotPasswordLink</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginButtonVisibility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginPageLoadsSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginPageUrl</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyPasswordFieldVisibility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUsernameFieldVisibility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ui</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginButtonVisibility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginPageUrl</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyPasswordFieldVisibility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUsernameFieldVisibility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">validation</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyBlankPasswordValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyBlankUsernameValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyBothFieldsBlankValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Login Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Login_Test_Suite');
+function tableData_Login_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyLoginPageLoadsSuccessfully')
+data.setCell(0, 2, 'com.qa.tests.LoginTests')
+data.setCell(0, 3, 40736);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLoginWithInvalidPassword')
+data.setCell(1, 2, 'com.qa.tests.LoginTests')
+data.setCell(1, 3, 8169);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginWithInvalidUsername')
+data.setCell(2, 2, 'com.qa.tests.LoginTests')
+data.setCell(2, 3, 6727);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyValidLogin')
+data.setCell(3, 2, 'com.qa.tests.LoginTests')
+data.setCell(3, 3, 3165);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyForgotPasswordLink')
+data.setCell(4, 2, 'com.qa.tests.LoginTests')
+data.setCell(4, 3, 2812);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyBlankUsernameValidation')
+data.setCell(5, 2, 'com.qa.tests.LoginTests')
+data.setCell(5, 3, 2720);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyBothFieldsBlankValidation')
+data.setCell(6, 2, 'com.qa.tests.LoginTests')
+data.setCell(6, 3, 1566);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyBlankPasswordValidation')
+data.setCell(7, 2, 'com.qa.tests.LoginTests')
+data.setCell(7, 3, 1361);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginButtonVisibility')
+data.setCell(8, 2, 'com.qa.tests.LoginTests')
+data.setCell(8, 3, 1059);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUsernameFieldVisibility')
+data.setCell(9, 2, 'com.qa.tests.LoginTests')
+data.setCell(9, 3, 1049);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyPasswordFieldVisibility')
+data.setCell(10, 2, 'com.qa.tests.LoginTests')
+data.setCell(10, 3, 804);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLoginPageUrl')
+data.setCell(11, 2, 'com.qa.tests.LoginTests')
+data.setCell(11, 3, 105);
+window.suiteTableData['Login_Test_Suite']= { tableData: data, tableDiv: 'times-div-Login_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Login_Test_Suite">
+              </div> <!-- times-div-Login_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Login Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Login_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">14624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginPageLoadsSuccessfully</span>
+                <span class="method-start">14718 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55674 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">58286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">67574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageUrl</span>
+                <span class="method-start">67576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67692 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">69658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">80981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUsernameFieldVisibility</span>
+                <span class="method-start">80993 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82044 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">83305 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">92526 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPasswordFieldVisibility</span>
+                <span class="method-start">92528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">93339 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">94887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">104144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginButtonVisibility</span>
+                <span class="method-start">104147 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">105209 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">109515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">119674 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidLogin(LOGIN_006, Admin, admin123, Redirected to Dashboard)</span>
+                <span class="method-start">119677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">122850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">124595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">135215 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInvalidUsername(LOGIN_007, Admin123, admin123, Invalid credentials)</span>
+                <span class="method-start">135217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">141947 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">143356 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">154001 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithInvalidPassword(LOGIN_008, Admin, Wrong123, Invalid credentials)</span>
+                <span class="method-start">154009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">163539 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">175667 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBlankUsernameValidation</span>
+                <span class="method-start">175675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">178399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">179652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">190449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBlankPasswordValidation</span>
+                <span class="method-start">190451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">191815 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">193266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">204919 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBothFieldsBlankValidation</span>
+                <span class="method-start">204930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">206497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">208284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">217483 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyForgotPasswordLink</span>
+                <span class="method-start">217485 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">220300 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

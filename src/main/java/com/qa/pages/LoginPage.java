@@ -1,4 +1,4 @@
-package com.qa.pages;
+/*package com.qa.pages;
 
 import com.qa.utils.WaitUtils;
 import org.apache.logging.log4j.LogManager;
@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.PageFactory;*/
 
 /**
  * LoginPage.java
@@ -25,10 +25,11 @@ import org.openqa.selenium.support.PageFactory;
  * @FindBy(className = "login-btn")       → by Class Name
  * @FindBy(linkText = "Forgot Password")  → by exact link text
  */
-public class LoginPage {
+
+/*public class LoginPage {
 
     private static final Logger log = LogManager.getLogger(LoginPage.class);
-    private WebDriver driver;
+    private final WebDriver driver;*/
 
     // =====================================================================
     // LOGIN PAGE ELEMENTS — ADD YOUR LOCATORS BELOW
@@ -36,7 +37,7 @@ public class LoginPage {
 
     // TC: LOGIN_003 — Username input field
     
-    @FindBy(name = "username")
+  /*  @FindBy(name = "username")
     private WebElement usernameField;
 
     // TC: LOGIN_004 — Password input field
@@ -82,7 +83,7 @@ public class LoginPage {
      ACTION METHODS —
     =====================================================================*/
 
-    public void enterUsername(String username) {
+   /* public void enterUsername(String username) {
         WebElement ele = WaitUtils.waitForVisibility(driver, usernameField);
         ele.clear();
         ele.sendKeys(username);
@@ -112,7 +113,7 @@ public class LoginPage {
         WebElement ele = WaitUtils.waitForClickability(driver, forgotPasswordLink);
         ele.click();
         log.info("Clicked Forgot Password link.");
-        return new ForgotPasswordPage(driver);
+        return new ForgotPasswordPage();
     }
 
     // =====================================================================
@@ -182,4 +183,4 @@ public class LoginPage {
     public boolean isDashboardLoaded() {
         return WaitUtils.waitForUrlContains(driver, "dashboard");
     }
-}
+}*/

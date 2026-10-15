@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- Console Appender: Logs appear in terminal/IDE console -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%t] %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File Appender: Logs saved to logs/automation.log -->
+        <File name="FileAppender" fileName="logs/automation.log" append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%t] %logger{36} - %msg%n"/>
+        </File>
+
+        <!-- Rolling File Appender: Rolls over daily or when size exceeds 10MB -->
+        <RollingFile name="RollingFileAppender"
+                     fileName="logs/test-execution.log"
+                     filePattern="logs/test-execution-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%t] %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Root Logger: Captures all logs at INFO and above -->
+        <Root level="INFO">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="RollingFileAppender"/>
+        </Root>
+
+        <!-- Package-specific Logger: DEBUG level for our framework -->
+        <Logger name="com.qa" level="DEBUG" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+    </Loggers>
+
+</Configuration>

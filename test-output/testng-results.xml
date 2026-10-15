@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-10T14:26:29 IST" name="Login Test Suite" finished-at="2026-07-10T14:30:12 IST" duration-ms="223325">
+    <groups>
+      <group name="negative">
+        <method signature="LoginTests.verifyLoginWithInvalidUsername(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginWithInvalidUsername" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyLoginWithInvalidPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginWithInvalidPassword" class="com.qa.tests.LoginTests"/>
+      </group> <!-- negative -->
+      <group name="functional">
+        <method signature="LoginTests.verifyLoginPageLoadsSuccessfully()[pri:1, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginPageLoadsSuccessfully" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyForgotPasswordLink()[pri:12, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyForgotPasswordLink" class="com.qa.tests.LoginTests"/>
+      </group> <!-- functional -->
+      <group name="ui">
+        <method signature="LoginTests.verifyLoginPageUrl()[pri:2, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginPageUrl" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyUsernameFieldVisibility()[pri:3, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyUsernameFieldVisibility" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyPasswordFieldVisibility()[pri:4, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyPasswordFieldVisibility" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyLoginButtonVisibility()[pri:5, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginButtonVisibility" class="com.qa.tests.LoginTests"/>
+      </group> <!-- ui -->
+      <group name="regression">
+        <method signature="LoginTests.verifyValidLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyValidLogin" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyLoginWithInvalidUsername(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginWithInvalidUsername" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyLoginWithInvalidPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginWithInvalidPassword" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyBlankUsernameValidation()[pri:9, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyBlankUsernameValidation" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyBlankPasswordValidation()[pri:10, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyBlankPasswordValidation" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyBothFieldsBlankValidation()[pri:11, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyBothFieldsBlankValidation" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyForgotPasswordLink()[pri:12, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyForgotPasswordLink" class="com.qa.tests.LoginTests"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTests.verifyLoginPageLoadsSuccessfully()[pri:1, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginPageLoadsSuccessfully" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyLoginPageUrl()[pri:2, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginPageUrl" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyUsernameFieldVisibility()[pri:3, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyUsernameFieldVisibility" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyPasswordFieldVisibility()[pri:4, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyPasswordFieldVisibility" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyLoginButtonVisibility()[pri:5, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyLoginButtonVisibility" class="com.qa.tests.LoginTests"/>
+      </group> <!-- smoke -->
+      <group name="positive">
+        <method signature="LoginTests.verifyValidLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyValidLogin" class="com.qa.tests.LoginTests"/>
+      </group> <!-- positive -->
+      <group name="validation">
+        <method signature="LoginTests.verifyBlankUsernameValidation()[pri:9, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyBlankUsernameValidation" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyBlankPasswordValidation()[pri:10, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyBlankPasswordValidation" class="com.qa.tests.LoginTests"/>
+        <method signature="LoginTests.verifyBothFieldsBlankValidation()[pri:11, instance:com.qa.tests.LoginTests@1a7288a3]" name="verifyBothFieldsBlankValidation" class="com.qa.tests.LoginTests"/>
+      </group> <!-- validation -->
+    </groups>
+    <test started-at="2026-07-10T14:26:29 IST" name="Login Module" finished-at="2026-07-10T14:30:12 IST" duration-ms="223325">
+      <class name="com.qa.tests.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:26:30 IST" name="setUp" finished-at="2026-07-10T14:26:44 IST" duration-ms="14623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:26:44 IST" name="initPage" finished-at="2026-07-10T14:26:44 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyLoginPageLoadsSuccessfully()[pri:1, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:26:44 IST" name="verifyLoginPageLoadsSuccessfully" description="LOGIN_001 | Verify login page loads successfully" finished-at="2026-07-10T14:27:25 IST" duration-ms="40736" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[LOGIN_001 FAILED: Login page did not load. Logo not visible. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: LOGIN_001 FAILED: Login page did not load. Logo not visible. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.qa.tests.LoginTests.verifyLoginPageLoadsSuccessfully(LoginTests.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageLoadsSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:25 IST" name="tearDown" finished-at="2026-07-10T14:27:28 IST" duration-ms="2602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:28 IST" name="setUp" finished-at="2026-07-10T14:27:37 IST" duration-ms="9288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:37 IST" name="initPage" finished-at="2026-07-10T14:27:37 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyLoginPageUrl()[pri:2, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:37 IST" name="verifyLoginPageUrl" description="LOGIN_002 | Verify login page URL matches expected URL" finished-at="2026-07-10T14:27:37 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:37 IST" name="tearDown" finished-at="2026-07-10T14:27:39 IST" duration-ms="1965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:39 IST" name="setUp" finished-at="2026-07-10T14:27:51 IST" duration-ms="11323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:51 IST" name="initPage" finished-at="2026-07-10T14:27:51 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyUsernameFieldVisibility()[pri:3, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:51 IST" name="verifyUsernameFieldVisibility" description="LOGIN_003 | Verify username field is visible and enabled" finished-at="2026-07-10T14:27:52 IST" duration-ms="1049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUsernameFieldVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:52 IST" name="tearDown" finished-at="2026-07-10T14:27:53 IST" duration-ms="1260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:27:53 IST" name="setUp" finished-at="2026-07-10T14:28:02 IST" duration-ms="9220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:02 IST" name="initPage" finished-at="2026-07-10T14:28:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyPasswordFieldVisibility()[pri:4, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:02 IST" name="verifyPasswordFieldVisibility" description="LOGIN_004 | Verify password field is visible and enabled" finished-at="2026-07-10T14:28:03 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordFieldVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:03 IST" name="tearDown" finished-at="2026-07-10T14:28:05 IST" duration-ms="1543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:05 IST" name="setUp" finished-at="2026-07-10T14:28:14 IST" duration-ms="9257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:14 IST" name="initPage" finished-at="2026-07-10T14:28:14 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyLoginButtonVisibility()[pri:5, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:14 IST" name="verifyLoginButtonVisibility" description="LOGIN_005 | Verify login button is visible and clickable" finished-at="2026-07-10T14:28:15 IST" duration-ms="1059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButtonVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:15 IST" name="tearDown" finished-at="2026-07-10T14:28:17 IST" duration-ms="1865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:19 IST" name="setUp" finished-at="2026-07-10T14:28:29 IST" duration-ms="10159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:29 IST" name="initPage" finished-at="2026-07-10T14:28:29 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyValidLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:29 IST" name="verifyValidLogin" description="LOGIN_006 | Verify valid login redirects to dashboard" data-provider="validLoginData" finished-at="2026-07-10T14:28:33 IST" duration-ms="3165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LOGIN_006]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Redirected to Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:33 IST" name="tearDown" finished-at="2026-07-10T14:28:34 IST" duration-ms="1676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:34 IST" name="setUp" finished-at="2026-07-10T14:28:45 IST" duration-ms="10620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:45 IST" name="initPage" finished-at="2026-07-10T14:28:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyLoginWithInvalidUsername(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:45 IST" name="verifyLoginWithInvalidUsername" description="LOGIN_007 | Verify error shown for invalid username" data-provider="invalidUsernameData" finished-at="2026-07-10T14:28:52 IST" duration-ms="6727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LOGIN_007]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:52 IST" name="tearDown" finished-at="2026-07-10T14:28:53 IST" duration-ms="1347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:28:53 IST" name="setUp" finished-at="2026-07-10T14:29:04 IST" duration-ms="10645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:04 IST" name="initPage" finished-at="2026-07-10T14:29:04 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyLoginWithInvalidPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:04 IST" name="verifyLoginWithInvalidPassword" description="LOGIN_008 | Verify error shown for invalid password" data-provider="invalidPasswordData" finished-at="2026-07-10T14:29:12 IST" duration-ms="8169" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LOGIN_008]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrong123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [LOGIN_008 FAILED: Invalid password validation failed.] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [LOGIN_008 FAILED: Invalid password validation failed.] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at com.qa.tests.LoginTests.verifyLoginWithInvalidPassword(LoginTests.java:179)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:12 IST" name="tearDown" finished-at="2026-07-10T14:29:13 IST" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:13 IST" name="setUp" finished-at="2026-07-10T14:29:25 IST" duration-ms="12128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:25 IST" name="initPage" finished-at="2026-07-10T14:29:25 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyBlankUsernameValidation()[pri:9, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:25 IST" name="verifyBlankUsernameValidation" description="LOGIN_009 | Verify required validation when username is blank" finished-at="2026-07-10T14:29:28 IST" duration-ms="2720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlankUsernameValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:28 IST" name="tearDown" finished-at="2026-07-10T14:29:29 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:29 IST" name="setUp" finished-at="2026-07-10T14:29:40 IST" duration-ms="10797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:40 IST" name="initPage" finished-at="2026-07-10T14:29:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyBlankPasswordValidation()[pri:10, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:40 IST" name="verifyBlankPasswordValidation" description="LOGIN_010 | Verify required validation when password is blank" finished-at="2026-07-10T14:29:42 IST" duration-ms="1361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlankPasswordValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:42 IST" name="tearDown" finished-at="2026-07-10T14:29:43 IST" duration-ms="1450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:43 IST" name="setUp" finished-at="2026-07-10T14:29:55 IST" duration-ms="11653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:55 IST" name="initPage" finished-at="2026-07-10T14:29:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyBothFieldsBlankValidation()[pri:11, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:55 IST" name="verifyBothFieldsBlankValidation" description="LOGIN_011 | Verify validation messages when both fields are blank" finished-at="2026-07-10T14:29:56 IST" duration-ms="1566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBothFieldsBlankValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:56 IST" name="tearDown" finished-at="2026-07-10T14:29:58 IST" duration-ms="1786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:29:58 IST" name="setUp" finished-at="2026-07-10T14:30:07 IST" duration-ms="9199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:30:07 IST" name="initPage" finished-at="2026-07-10T14:30:07 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyForgotPasswordLink()[pri:12, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:30:07 IST" name="verifyForgotPasswordLink" description="LOGIN_012 | Verify Forgot Password link navigates to reset page" finished-at="2026-07-10T14:30:10 IST" duration-ms="2812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTests@1a7288a3]" started-at="2026-07-10T14:30:10 IST" name="tearDown" finished-at="2026-07-10T14:30:12 IST" duration-ms="2378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.LoginTests -->
+    </test> <!-- Login Module -->
+  </suite> <!-- Login Test Suite -->
+</testng-results>

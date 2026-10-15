@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng.xml
+    -----------
+    TestNG suite configuration file.
+    Controls which tests run, in which order, and with which listeners.
+
+    Run all tests:    mvn test
+    Run only smoke:   mvn test -Dgroups=smoke
+    Run only login:   mvn test -Dtest=LoginTests
+-->
+
+<suite name="Automation Test Suite" verbose="2" parallel="none">
+
+    <!-- Attach our custom listener for screenshots + Extent Reports -->
+    <listeners>
+        <listener class-name="com.qa.utils.TestListener"/>
+    </listeners>
+
+    <!-- ======================================================
+         LOGIN MODULE TEST GROUP
+    ====================================================== -->
+    <test name="Login Module Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+                <include name="functional"/>
+                <include name="ui"/>
+                <include name="positive"/>
+                <include name="negative"/>
+                <include name="validation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qa.tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <!-- ======================================================
+         FORGOT PASSWORD MODULE TEST GROUP
+    ====================================================== -->
+    <test name="Forgot Password Module Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+                <include name="functional"/>
+                <include name="ui"/>
+                <include name="positive"/>
+                <include name="negative"/>
+                <include name="validation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qa.tests.ForgotPasswordTests"/>
+        </classes>
+    </test>
+
+    <!-- ======================================================
+         SMOKE TESTS ONLY (uncomment to run a smoke suite)
+    ====================================================== -->
+    <!--
+    <test name="Smoke Tests Only">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qa.tests.LoginTests"/>
+            <class name="com.qa.tests.ForgotPasswordTests"/>
+        </classes>
+    </test>
+    -->
+
+</suite>
